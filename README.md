@@ -217,7 +217,7 @@ Stratum is designed to keep your code on your machine.
   no source code is ever included
 - **Telemetry** — disabled by default; opt-in aggregate usage counts only
 
-[Full Privacy Policy →]([(https://github.com/petar-v-ganchev/stratum/privacy-policy)](https://github.com/petar-v-ganchev/stratum/privacy-policy)
+[Full Privacy Policy →](https://github.com/petar-v-ganchev/stratum/privacy-policy)
 
 ---
 
