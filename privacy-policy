@@ -164,7 +164,7 @@ stratum_session	Maintains your login session on the web dashboard (Team/Enterpri
 stratum_consent	Records your cookie consent choice	1 year
 _ga, _gid	Google Analytics — anonymous aggregate traffic analytics (only if you consent to analytics cookies)	2 years / 24 hours
 
-You can manage cookie preferences via the cookie banner on stratum.dev or in your browser settings. Refusing non-essential cookies does not affect your ability to use the Plugin.
+You can manage cookie preferences via the cookie banner in your browser settings. Refusing non-essential cookies does not affect your ability to use the Plugin.
 
 16. Changes to This Policy
 We may update this Privacy Policy from time to time. When we make material changes, we will:
