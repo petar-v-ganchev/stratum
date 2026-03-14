@@ -8,11 +8,9 @@ unpatched vulnerability puts all Stratum users at risk.
 
 To report a security vulnerability, email us at:
 
-**security@stratum.dev**
+*petar.v.ganchev@gmail.com*
 
 Encrypt your report using our PGP key if the vulnerability is sensitive.
-Our PGP key is published at:
-[https://stratum.dev/.well-known/pgp-key.asc](https://stratum.dev/.well-known/pgp-key.asc)
 
 ### What to Include
 
