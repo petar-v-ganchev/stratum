@@ -59,8 +59,8 @@ NL input processing via a third-party AI provider is never enabled by default. T
 •	Any data from your .stratum/access.json
 
 5.4 AI Provider Selection
-You may configure which AI language model provider processes your NL input in Stratum Settings. The available providers are listed in Stratum's documentation at docs.stratum.dev/nl-providers. Each provider's own privacy policy governs how they handle the data they receive from Stratum.
-The current list of supported AI language model providers, together with links to their respective privacy policies, is maintained in Stratum's documentation at docs.stratum.dev/nl-providers and is updated whenever a new provider is added or removed.
+You may configure which AI language model provider processes your NL input in Stratum Settings. The available providers are listed in Stratum's documentation. Each provider's own privacy policy governs how they handle the data they receive from Stratum.
+The current list of supported AI language model providers, together with links to their respective privacy policies, is maintained in Stratum's documentation and is updated whenever a new provider is added or removed.
 
 Stratum has a Data Processing Agreement (DPA) in place with each supported provider. Under these agreements, input data is not used to train the provider's models, and is subject to the provider's standard data retention and deletion policies.
 5.5 Revoking NL Consent
