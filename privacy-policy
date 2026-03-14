@@ -1,0 +1,182 @@
+Stratum Privacy Policy
+VS Code Plugin — Stratum IDE by Stratum Inc.
+Effective Date: [DATE]   |   Last Updated: [DATE]   |   Version 1.0
+
+Plain-English Summary
+Stratum reads your source files and project models to power its canvases — this data stays on your machine and is never sent to Stratum's servers. The only data that ever leaves your machine is (a) your description text when you use the NL input feature, and only after you explicitly consent, and (b) anonymous usage counts if you opt in. We do not sell your data. We do not mine your code. We do not build profiles of you.
+
+1. Who We Are
+Stratum IDE is developed and operated by Stratum Inc. (referred to in this policy as 'Stratum', 'we', 'us', or 'our'). Stratum Inc. is the data controller responsible for your personal data collected in connection with the Stratum VS Code extension.
+Contact for privacy matters:
+•	Email: privacy@stratum.dev
+•	Postal: Stratum Inc., [ADDRESS]
+•	Data Protection Officer: dpo@stratum.dev
+
+2. What This Policy Covers
+This policy applies to the Stratum VS Code extension ('the Plugin'), the Stratum web properties at stratum.dev and docs.stratum.dev, and any associated services. It does not apply to third-party services that the Plugin may optionally connect to (such as GitHub, third-party AI language model providers) — those services are governed by their own privacy policies, which we link to where relevant.
+If you are using Stratum under a Team or Enterprise subscription purchased by your employer, your employer's privacy settings and data processing agreement with Stratum may apply in addition to this policy.
+
+3. Data We Collect and Why
+Stratum is designed to do as little data collection as possible. The table below describes every category of data we process, where it stays, and why.
+
+Data Category	Where It Stays	Why / Lawful Basis
+Source files and project files in your workspace	On your machine only. Never transmitted to Stratum servers.	Necessary to provide the core function of the Plugin (canvas rendering and bidirectional sync). Lawful basis: performance of contract.
+.stratum/ model files (scenarios.json, hrsg, vct, vdb JSON)	On your machine only, committed to your git repository.	Necessary for the Plugin to function. You control these files entirely.
+Your git email address (from git config user.email)	On your machine only. Used to match you against .stratum/access.json.	Necessary to resolve your role in the team. Never sent to Stratum. Lawful basis: performance of contract.
+NL input text (what you type in the NL input bar)	Processed by a third-party AI provider (an AI language model provider). See Section 5.	Only processed after explicit consent. Used to generate Scenario proposals. Lawful basis: consent.
+Anonymous aggregate usage statistics (feature counts, error counts)	Sent to Stratum servers if you opt in. Never linked to your identity.	Helps us improve the Plugin. Lawful basis: consent. Opt-in only — never default.
+Crash reports (stack trace, Plugin state at time of crash)	Sent to Stratum servers only if you click 'Send crash report'. PII-scrubbed before transmission.	Helps us fix bugs. Lawful basis: consent. Never automatic.
+Account information (name, email, organisation) — Team/Enterprise tiers only	Stored on Stratum servers (PostgreSQL, encrypted at rest).	Required to manage your subscription and team access. Lawful basis: performance of contract.
+Billing information — Team/Enterprise tiers only	Processed by Stripe. Stratum stores only your Stripe Customer ID and subscription status.	Required to process payment. Lawful basis: performance of contract. Stratum never sees your full card number.
+
+4. What We Never Collect
+Our Commitments
+These are firm commitments, not aspirations. Stratum is built to make these technically impossible, not just policy-prohibited.
+
+•	We never transmit your source code to Stratum servers. Ever.
+•	We never transmit your file names, class names, or project names to Stratum servers.
+•	We never transmit your git history, commit messages, or branch names.
+•	We never read files outside the workspace folder you have opened in VS Code.
+•	We never store the content of your .stratum/access.json (your team role configuration) on our servers.
+•	We never sell, rent, or trade your data to third parties for marketing or advertising purposes.
+•	We never use your code or project data to train AI models.
+•	We never build profiles of individual users or track behaviour across multiple projects.
+
+5. NL Input and Third-Party AI Processing
+The NL input feature allows you to describe what you want to build in plain English. Stratum interprets your description and proposes a structured Scenario. This feature uses a third-party AI language model to perform the interpretation.
+5.1 Consent Requirement
+NL input processing via a third-party AI provider is never enabled by default. The first time you attempt to use the NL input bar, Stratum displays an explicit consent prompt explaining what will be sent and to which provider. You must actively choose to allow this. You can use NL input in 'offline mode' (a local rule-based classifier) at any time without consenting to third-party processing.
+5.2 What Is Sent to the AI Provider
+•	Your plain-English description text (what you typed in the NL input bar)
+•	Structured context about your project: the names of existing Screens, existing Scenarios, and data entity names — provided as a structured list, not as raw file content
+•	The Plugin's interpretation task instructions (a system prompt that does not contain any of your code or project content)
+
+5.3 What Is Never Sent to the AI Provider
+•	Your source code (no file content, no function bodies, no class definitions)
+•	Your actual file names or directory structure
+•	The content of your .stratum/ model files
+•	Your git identity, email address, or commit history
+•	Any data from your .stratum/access.json
+
+5.4 AI Provider Selection
+You may configure which AI language model provider processes your NL input in Stratum Settings. The available providers are listed in Stratum's documentation at docs.stratum.dev/nl-providers. Each provider's own privacy policy governs how they handle the data they receive from Stratum.
+The current list of supported AI language model providers, together with links to their respective privacy policies, is maintained in Stratum's documentation at docs.stratum.dev/nl-providers and is updated whenever a new provider is added or removed.
+
+Stratum has a Data Processing Agreement (DPA) in place with each supported provider. Under these agreements, input data is not used to train the provider's models, and is subject to the provider's standard data retention and deletion policies.
+5.5 Revoking NL Consent
+You can withdraw your consent to third-party NL processing at any time by opening Stratum Settings → NL Input → 'Switch to offline mode'. This immediately stops any further API calls to third-party providers. Previously transmitted descriptions cannot be retroactively deleted from the provider's infrastructure; the provider's own retention and deletion policies apply.
+
+6. Automatic Git Commits
+When you make changes to Stratum canvases, the Plugin may automatically create git commits in your local repository on your behalf. These commits:
+•	Are made to your local repository only — Stratum does not push commits to any remote on your behalf without your explicit instruction.
+•	Use your existing git identity (git config user.email and user.name) — Stratum does not set or override your git identity.
+•	Include a role tag in the commit message (e.g., [PO: you@company.com]) so your team can see which changes were made via Stratum and in what role capacity.
+•	Are visible in your repository's git log and can be reverted at any time using standard git commands.
+You can disable auto-commits entirely in Stratum Settings → Sync → 'Manual commits only'. In this mode, Stratum stages changes but does not commit them — you commit them yourself.
+
+7. Telemetry and Analytics
+7.1 What We Collect (Opt-In Only)
+If you choose to enable anonymous usage statistics (which is always opt-in and never the default), Stratum collects the following aggregate counts:
+•	Which canvas panels were opened and approximately how many times
+•	Whether the NL input feature was used (count only — not the content)
+•	Whether specific error types were encountered (error code only — not your code)
+•	Plugin version, VS Code version, and operating system type
+
+7.2 What We Never Collect in Telemetry
+•	Any source code content
+•	Any NL input text
+•	Any file names, class names, or project names
+•	Any personal identifiers — your email address is never included in telemetry events
+•	Any information that could identify you individually
+
+7.3 How to Enable or Disable
+Telemetry is disabled by default. To enable it: Stratum Settings → Privacy → 'Share anonymous usage statistics'. To disable it at any time: the same setting. If VS Code's global telemetry setting is set to 'off', Stratum respects this setting and disables all telemetry regardless of Stratum's individual setting.
+
+8. Crash Reports
+When Stratum encounters an unexpected error, it may show a notification: '[Something went wrong in the HRSG panel] — your work is safe. [Send crash report] [Dismiss]'. Crash reports are never sent automatically — you must click 'Send crash report' to transmit one.
+8.1 What a Crash Report Contains
+•	The error message and stack trace (internal Plugin function names — not your code)
+•	The Plugin version, VS Code version, and operating system
+•	The name of the canvas panel that was active at the time of the crash
+•	A snapshot of the relevant canvas model state — PII-scrubbed before transmission: all entity names, scenario names, and field names are replaced with generic identifiers (e.g., 'entity_1', 'scenario_2')
+
+8.2 What a Crash Report Never Contains
+•	Your source code
+•	Your actual entity names, scenario names, or field values
+•	Your git identity or email address
+•	The full content of any file in your workspace
+
+9. Data Sharing and Third Parties
+Stratum does not sell, rent, or trade any of your data. We share data only in the following limited circumstances:
+•	AI language model providers: only NL input text as described in Section 5, only after your consent, and under Data Processing Agreements.
+•	Stripe: billing information for Team and Enterprise customers, under Stripe's standard data processing agreement.
+•	Infrastructure providers (AWS, Cloudflare): hosting of the Stratum web properties and, for Team/Enterprise customers, account and project data storage. These providers process data only on our behalf and under data processing agreements.
+•	Crash reporting service (Sentry): PII-scrubbed crash reports that you choose to submit, under our DPA with Sentry.
+•	Legal requirements: if we are required by law, court order, or regulatory authority to disclose data, we will do so and will notify you unless legally prohibited from doing so.
+•	Business transfer: if Stratum is acquired or merged, your data may be transferred to the acquirer under the same privacy protections. We will notify you before any such transfer.
+
+10. Data Retention
+Data Category	Retention Period
+Source files and .stratum/ models	Retained on your machine for as long as you keep them. Stratum does not retain copies.
+NL input text	Processed in real time by the AI provider and not retained by Stratum. Provider retention per their policy (typically 30 days for API calls without training consent).
+Anonymous telemetry events	Raw events: 90 days. Aggregated metrics: 2 years.
+Crash reports	90 days, then permanently deleted.
+Account data (Team/Enterprise)	Retained for the duration of your subscription plus 90 days after cancellation, then permanently deleted on request.
+Billing records	Retained for 7 years as required by applicable tax and accounting law.
+
+11. Your Rights
+Depending on your location, you may have some or all of the following rights regarding your personal data. To exercise any of these rights, contact us at privacy@stratum.dev.
+11.1 Rights Under GDPR (EEA, UK, and Switzerland Residents)
+•	Right of access: You can request a copy of all personal data we hold about you.
+•	Right of rectification: You can ask us to correct inaccurate personal data.
+•	Right of erasure: You can ask us to delete your personal data. For Free tier users: deletion of your account deletes all associated data. For Team/Enterprise: subject to any data retention obligations and your employer's instructions.
+•	Right to data portability: You can request your account data in a machine-readable format.
+•	Right to object: You can object to processing based on legitimate interests.
+•	Right to withdraw consent: For NL processing and telemetry (consent-based), you can withdraw at any time as described in Sections 5.5 and 7.3.
+•	Right to lodge a complaint: You have the right to lodge a complaint with your local data protection authority.
+
+11.2 Rights Under CCPA (California Residents)
+California residents have the right to know what personal information we collect, the right to delete personal information, the right to opt out of the sale of personal information (Stratum does not sell personal information), and the right to non-discrimination for exercising these rights.
+To submit a CCPA request: privacy@stratum.dev or toll-free at [PHONE NUMBER].
+
+12. Children's Privacy
+Stratum is not directed at children under the age of 16. We do not knowingly collect personal data from children under 16. If you believe a child has provided us with personal data, please contact privacy@stratum.dev and we will delete it promptly.
+
+13. Security
+Stratum takes the security of your data seriously:
+•	Source files and project models never leave your machine, so they are not exposed to our infrastructure at all.
+•	Account data (Team/Enterprise) is stored encrypted at rest (AES-256) and transmitted over TLS 1.3.
+•	Stratum does not store passwords — authentication uses third-party identity providers (GitHub OAuth, Google OAuth, or SSO for Enterprise).
+•	We conduct annual security assessments of our infrastructure.
+•	We operate a responsible disclosure program at security@stratum.dev. Verified security researchers who report vulnerabilities in good faith will not face legal action.
+To report a security vulnerability: security@stratum.dev. We aim to acknowledge reports within 48 hours and resolve critical vulnerabilities within 7 days.
+
+14. International Data Transfers
+Stratum is incorporated in [JURISDICTION]. If you are located in the EEA or UK, your personal data may be transferred to and processed in countries outside the EEA/UK, including the United States. Where we make such transfers, we use the following safeguards:
+•	Standard Contractual Clauses (SCCs) approved by the European Commission, for transfers to our infrastructure and service providers.
+•	Adequacy decisions, where applicable.
+For more information about our international transfer mechanisms, contact dpo@stratum.dev.
+
+15. Cookies and Web Tracking
+The Stratum VS Code Plugin does not use cookies. The Stratum web properties (stratum.dev, docs.stratum.dev) use the following cookies:
+Cookie Name	Purpose	Duration
+stratum_session	Maintains your login session on the web dashboard (Team/Enterprise only)	Session (expires on browser close)
+stratum_consent	Records your cookie consent choice	1 year
+_ga, _gid	Google Analytics — anonymous aggregate traffic analytics (only if you consent to analytics cookies)	2 years / 24 hours
+
+You can manage cookie preferences via the cookie banner on stratum.dev or in your browser settings. Refusing non-essential cookies does not affect your ability to use the Plugin.
+
+16. Changes to This Policy
+We may update this Privacy Policy from time to time. When we make material changes, we will:
+•	Update the 'Last Updated' date at the top of this page
+•	Notify Team and Enterprise customers by email at least 30 days before the change takes effect
+•	Display an in-Plugin notification for significant changes
+Continued use of the Plugin after a change takes effect constitutes your acceptance of the updated policy. If you do not agree with the updated policy, you should stop using the Plugin and, if applicable, cancel your subscription.
+
+17. Contact Us
+For any privacy-related questions, requests, or complaints:
+•	Email: petar.v.ganchev@gmail.com
+•	Data Protection Officer: petar.v.ganchev@gmail.com
+•	Post: Stratum
+We aim to respond to all privacy requests within 30 days. For complex requests, we may extend this by up to 60 days and will notify you of the extension.
+ 
