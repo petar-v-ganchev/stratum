@@ -65,7 +65,7 @@ The following are **in scope** for responsible disclosure:
 
 - The Stratum VS Code / Cursor extension (stratum-ide.stratum)
 - The Stratum web properties
-- The Stratum account and billing API (api.stratum.dev)
+- The Stratum account and billing API
 - The Stratum NL interpretation service
 - The `.stratum/access.json` role system and any bypass of role controls
 - Any component that could allow an attacker to access source code, project
