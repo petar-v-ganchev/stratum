@@ -140,7 +140,7 @@ California residents have the right to know what personal information we collect
 To submit a CCPA request: petar.v.ganchev@gmail.com.
 
 12. Children's Privacy
-Stratum is not directed at children under the age of 16. We do not knowingly collect personal data from children under 16. If you believe a child has provided us with personal data, please contact privacy@stratum.dev and we will delete it promptly.
+Stratum is not directed at children under the age of 16. We do not knowingly collect personal data from children under 16. If you believe a child has provided us with personal data, please contact petar.v.ganchev@gmail.com and we will delete it promptly.
 
 13. Security
 Stratum takes the security of your data seriously:
@@ -148,8 +148,8 @@ Stratum takes the security of your data seriously:
 •	Account data (Team/Enterprise) is stored encrypted at rest (AES-256) and transmitted over TLS 1.3.
 •	Stratum does not store passwords — authentication uses third-party identity providers (GitHub OAuth, Google OAuth, or SSO for Enterprise).
 •	We conduct annual security assessments of our infrastructure.
-•	We operate a responsible disclosure program at security@stratum.dev. Verified security researchers who report vulnerabilities in good faith will not face legal action.
-To report a security vulnerability: security@stratum.dev. We aim to acknowledge reports within 48 hours and resolve critical vulnerabilities within 7 days.
+•	We operate a responsible disclosure program at petar.v.ganchev@gmail.com. Verified security researchers who report vulnerabilities in good faith will not face legal action.
+To report a security vulnerability: petar.v.ganchev@gmail.com. We aim to acknowledge reports within 48 hours and resolve critical vulnerabilities within 7 days.
 
 14. International Data Transfers
 Stratum is incorporated in EU. If you are located in the outide EEA, your personal data may be transferred to and processed in countries in the EEA/UK. Where we make such transfers, we use the following safeguards:
