@@ -125,7 +125,7 @@ Account data (Team/Enterprise)	Retained for the duration of your subscription pl
 Billing records	Retained for 7 years as required by applicable tax and accounting law.
 
 11. Your Rights
-Depending on your location, you may have some or all of the following rights regarding your personal data. To exercise any of these rights, contact us at privacy@stratum.dev.
+Depending on your location, you may have some or all of the following rights regarding your personal data. To exercise any of these rights, contact us at petar.v.ganchev@gmail.com.
 11.1 Rights Under GDPR (EEA, UK, and Switzerland Residents)
 •	Right of access: You can request a copy of all personal data we hold about you.
 •	Right of rectification: You can ask us to correct inaccurate personal data.
@@ -137,7 +137,7 @@ Depending on your location, you may have some or all of the following rights reg
 
 11.2 Rights Under CCPA (California Residents)
 California residents have the right to know what personal information we collect, the right to delete personal information, the right to opt out of the sale of personal information (Stratum does not sell personal information), and the right to non-discrimination for exercising these rights.
-To submit a CCPA request: privacy@stratum.dev or toll-free at [PHONE NUMBER].
+To submit a CCPA request: petar.v.ganchev@gmail.com.
 
 12. Children's Privacy
 Stratum is not directed at children under the age of 16. We do not knowingly collect personal data from children under 16. If you believe a child has provided us with personal data, please contact privacy@stratum.dev and we will delete it promptly.
@@ -152,10 +152,10 @@ Stratum takes the security of your data seriously:
 To report a security vulnerability: security@stratum.dev. We aim to acknowledge reports within 48 hours and resolve critical vulnerabilities within 7 days.
 
 14. International Data Transfers
-Stratum is incorporated in [JURISDICTION]. If you are located in the EEA or UK, your personal data may be transferred to and processed in countries outside the EEA/UK, including the United States. Where we make such transfers, we use the following safeguards:
+Stratum is incorporated in EU. If you are located in the outide EEA, your personal data may be transferred to and processed in countries in the EEA/UK. Where we make such transfers, we use the following safeguards:
 •	Standard Contractual Clauses (SCCs) approved by the European Commission, for transfers to our infrastructure and service providers.
 •	Adequacy decisions, where applicable.
-For more information about our international transfer mechanisms, contact dpo@stratum.dev.
+For more information about our international transfer mechanisms, contact petar.v.ganchev@gmail.com.
 
 15. Cookies and Web Tracking
 The Stratum VS Code Plugin does not use cookies. The Stratum web properties (stratum.dev, docs.stratum.dev) use the following cookies:
