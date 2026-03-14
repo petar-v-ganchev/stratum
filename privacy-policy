@@ -158,7 +158,7 @@ Stratum is incorporated in EU. If you are located in the outide EEA, your person
 For more information about our international transfer mechanisms, contact petar.v.ganchev@gmail.com.
 
 15. Cookies and Web Tracking
-The Stratum VS Code Plugin does not use cookies. The Stratum web properties (stratum.dev, docs.stratum.dev) use the following cookies:
+The Stratum VS Code Plugin does not use cookies. The Stratum web properties use the following cookies:
 Cookie Name	Purpose	Duration
 stratum_session	Maintains your login session on the web dashboard (Team/Enterprise only)	Session (expires on browser close)
 stratum_consent	Records your cookie consent choice	1 year
