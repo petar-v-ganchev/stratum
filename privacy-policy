@@ -6,7 +6,7 @@ Plain-English Summary
 Stratum reads your source files and project models to power its canvases — this data stays on your machine and is never sent to Stratum's servers. The only data that ever leaves your machine is (a) your description text when you use the NL input feature, and only after you explicitly consent, and (b) anonymous usage counts if you opt in. We do not sell your data. We do not mine your code. We do not build profiles of you.
 
 1. Who We Are
-Stratum IDE is developed and operated by Stratum Inc. (referred to in this policy as 'Stratum', 'we', 'us', or 'our'). Stratum Inc. is the data controller responsible for your personal data collected in connection with the Stratum VS Code extension.
+Stratum IDE plugin is developed and managed by Petar Ganchev (referred to in this policy as 'Stratum', 'we', 'us', or 'our'). Stratum is the data controller responsible for your personal data collected in connection with the Stratum VS Code extension.
 Contact for privacy matters:
 •	Email: petar.v.ganchev@gmail.com
 •	Postal: Stratum
