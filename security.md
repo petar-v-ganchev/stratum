@@ -64,7 +64,7 @@ auto-updates.
 The following are **in scope** for responsible disclosure:
 
 - The Stratum VS Code / Cursor extension (stratum-ide.stratum)
-- The Stratum web properties: stratum.dev, docs.stratum.dev, app.stratum.dev
+- The Stratum web properties
 - The Stratum account and billing API (api.stratum.dev)
 - The Stratum NL interpretation service
 - The `.stratum/access.json` role system and any bypass of role controls
@@ -146,9 +146,7 @@ We are evaluating a formal paid bounty programme for a future release.
 
 ## Contact
 
-- **Security reports:** security@stratum.dev
-- **PGP key:** https://stratum.dev/.well-known/pgp-key.asc
-- **Security advisories:** https://github.com/stratum-ide/stratum/security/advisories
-- **General enquiries:** hello@stratum.dev
+- **Security reports:** petar.v.ganchev@gmail.com
+- **General enquiries:** petar.v.ganchev@gmail.com
 
-*Last updated: [DATE]*
+*Last updated: 14.03.2026*
